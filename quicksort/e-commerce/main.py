@@ -1,4 +1,4 @@
-import quick
+from quick import quicksort
 
 '''
 Задание: Сортировка заказов Интернет-магазина
@@ -15,7 +15,10 @@ import quick
 
 '''
 
-if __name__ == "main":
+def print_orders(arr):
+    pass
+
+if __name__ == "__main__":
     # Список заказов
     orders = [
         {"id": 101, "price": 5300, "date": "2024-10-01", "status": "paid"},
@@ -23,5 +26,13 @@ if __name__ == "main":
         {"id": 103, "price": 7800, "date": "2024-09-01", "status": "paid"},
         {"id": 104, "price": 9900, "date": "2024-10-02", "status": "cancelle"}
     ]
+    # print(orders[0]["status"])
+    # quick.test()
 
-    print(orders[0]["status"])
+    print(f"Список товаров:")
+    print(orders)
+
+    quicksort(orders, "price", True)
+
+    print(f"Отсортированный список товаров:")
+    print(orders)
