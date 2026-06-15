@@ -32,7 +32,7 @@ if __name__ == "__main__":
     print(f"Список товаров:")
     print(orders)
 
-    quicksort(orders, "price", True)
+    quicksort(orders, ["status", "price"], True)
 
     print(f"Отсортированный список товаров:")
     print(orders)
