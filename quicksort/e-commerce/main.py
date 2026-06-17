@@ -38,3 +38,7 @@ if __name__ == "__main__":
     # Тот же результат другим алгоритмом — меняется только algo:
     print_orders(sort([dict(o) for o in orders], ["status", "price"], algo="insert"),
                  "4') То же самое сортировкой вставками:")
+
+    arr = sort(orders, "price", algo="insert")
+    print_orders(arr, "Мой список")
+
